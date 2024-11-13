@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Training Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Personal Training Manager</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Add Client</h2>
+            <form id="client-form">
+                <input type="text" id="client-name" placeholder="Client Name" required>
+                <button type="submit">Add Client</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Clients</h2>
+            <ul id="client-list"></ul>
+        </section>
+
+        <section>
+            <h2>Client Progress</h2>
+            <form id="progress-form">
+                <input type="text" id="progress-client" placeholder="Client Name" required>
+                <input type="text" id="progress-detail" placeholder="Progress Detail" required>
+                <button type="submit">Add Progress</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Appointments</h2>
+            <form id="appointment-form">
+                <input type="text" id="appointment-client" placeholder="Client Name" required>
+                <input type="datetime-local" id="appointment-time" required>
+                <button type="submit">Schedule Appointment</button>
+            </form>
+            <ul id="appointment-list"></ul>
+        </section>
+
+        <section>
+            <h2>Revenue Tracking</h2>
+            <button id="calculate-revenue">Calculate Revenue</button>
+            <p id="revenue-output"></p>
+        </section>
+
+        <section>
+            <h2>Client Statistics</h2>
+            <button id="show-stats">Show Statistics</button>
+            <p id="stats-output"></p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
